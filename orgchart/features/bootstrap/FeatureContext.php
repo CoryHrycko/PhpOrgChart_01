@@ -3,12 +3,11 @@
 use Behat\Behat\Context\Context;
 use Behat\Gherkin\Node\PyStringNode;
 use Behat\Gherkin\Node\TableNode;
-use PhpSpec\Exception\Example\PendingException;
 
 /**
  * Defines application features from the specific context.
  */
-class FeatureContext implements Context
+class FeatureContext extends Behat\MinkExtension\Context\MinkContext implements Context, SnippetAcceptingContext
 {
     /**
      * Initializes context.
@@ -19,13 +18,5 @@ class FeatureContext implements Context
      */
     public function __construct()
     {
-    }
-    /** This is a major test of a test
-    * @Given there is a(n) :arg1, which costs £:arg2
-    */
-    public function thisIsATest($arg1, $arg2)
-    {
-        throw new PendingException();
-        # code...
     }
 }
