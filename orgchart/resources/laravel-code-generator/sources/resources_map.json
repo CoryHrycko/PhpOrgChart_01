@@ -1,0 +1,6 @@
+[
+    {
+        "model-name": "Employee",
+        "resource-file": "employees.json"
+    }
+]
