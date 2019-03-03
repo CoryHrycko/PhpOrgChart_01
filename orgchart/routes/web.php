@@ -18,7 +18,7 @@ Route::get('/', function () {
 Route::group(
 [
     'prefix' => 'employees',
-], function () {
+], function () { 
 
     Route::get('/', 'EmployeesController@index')
          ->name('employees.employee.index');
